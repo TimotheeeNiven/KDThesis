@@ -1,0 +1,19 @@
+Technique,Teacher Name,Teacher Accuracy,Student Name,Student Accuracy,Training Time
+kd,resnet110,"tensor(74.3200, device='cuda:0')",resnet20,"tensor(71.0200, device='cuda:0')",5215.136098623276
+kd,resnet110,"tensor(74.3200, device='cuda:0')",resnet20,"tensor(71.0900, device='cuda:0')",4669.122309207916
+kd,resnet110,"tensor(74.3200, device='cuda:0')",resnet20,"tensor(70.3700, device='cuda:0')",4717.408069372177
+hint,resnet110,"tensor(74.3200, device='cuda:0')",resnet20,"tensor(70.9300, device='cuda:0')",4943.774760961533
+hint,resnet110,"tensor(74.3200, device='cuda:0')",resnet20,"tensor(70.8900, device='cuda:0')",4815.840782403946
+hint,resnet110,"tensor(74.3200, device='cuda:0')",resnet20,"tensor(70.6700, device='cuda:0')",4786.316251516342
+vid,resnet110,"tensor(74.3200, device='cuda:0')",resnet20,"tensor(70.9300, device='cuda:0')",5184.771576881409
+kd,wrn_40_2,"tensor(75.5800, device='cuda:0')",wrn_16_2,"tensor(74.6200, device='cuda:0')",3145.685431241989
+vid,resnet110,"tensor(74.3200, device='cuda:0')",resnet20,"tensor(71.0200, device='cuda:0')",5167.7138776779175
+vid,resnet110,"tensor(74.3200, device='cuda:0')",resnet20,"tensor(70.7500, device='cuda:0')",5158.689046859741
+kd,wrn_40_2,"tensor(75.5800, device='cuda:0')",wrn_16_2,"tensor(74.8100, device='cuda:0')",3187.3064119815826
+kd,wrn_40_2,"tensor(75.5800, device='cuda:0')",wrn_16_2,"tensor(75.3000, device='cuda:0')",3156.551556825638
+hint,wrn_40_2,"tensor(75.5800, device='cuda:0')",wrn_16_2,"tensor(74.6700, device='cuda:0')",3234.195652484894
+hint,wrn_40_2,"tensor(75.5800, device='cuda:0')",wrn_16_2,"tensor(75.1300, device='cuda:0')",3304.54017829895
+hint,wrn_40_2,"tensor(75.5800, device='cuda:0')",wrn_16_2,"tensor(75.0700, device='cuda:0')",3333.126720190048
+vid,wrn_40_2,"tensor(75.5800, device='cuda:0')",wrn_16_2,"tensor(75.2400, device='cuda:0')",3708.092056274414
+vid,wrn_40_2,"tensor(75.5800, device='cuda:0')",wrn_16_2,"tensor(74.8600, device='cuda:0')",3707.180448770523
+vid,wrn_40_2,"tensor(75.5800, device='cuda:0')",wrn_16_2,"tensor(75.2900, device='cuda:0')",3674.812348842621
