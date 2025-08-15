@@ -1,0 +1,81 @@
+export MODEL=vitb16
+
+# Training Hyperparameters
+export BATCH_SIZE=128  # Larger batch size for stable training
+export LEARNING_RATE=0.005
+export LR_DECAY_EPOCHS="100,150,200"  
+export LR_DECAY_RATE=0.1  
+export WEIGHT_DECAY=5e-4
+export MOMENTUM=0.9  
+export EPOCHS=300
+
+
+export MODEL=MobileNetV3
+
+# Training Hyperparameters
+export BATCH_SIZE=64  # Increase to 128 or 256 if GPU allows
+export LEARNING_RATE=0.05  # Lowered for stability
+export LR_DECAY_EPOCHS="120,160,200"  # Adjusted for smoother decay
+export LR_DECAY_RATE=0.1
+export WEIGHT_DECAY=5e-4
+export MOMENTUM=0.9
+export EPOCHS=240  # Keep high for MobileNetV3
+
+export MODEL=efficientnet_b1
+
+# Training Hyperparameters
+export BATCH_SIZE=128  # Larger batch size for stable training
+export LEARNING_RATE=0.001
+export LR_DECAY_EPOCHS="120,150"  
+export LR_DECAY_RATE=0.1
+export WEIGHT_DECAY=5e-3
+export MOMENTUM=0.9  
+export EPOCHS=200
+
+export MODEL=vgg19
+
+# Training Hyperparameters
+export BATCH_SIZE=64 
+export LEARNING_RATE=0.001 #
+export LR_DECAY_EPOCHS="60,90"  
+export LR_DECAY_RATE=0.2
+export WEIGHT_DECAY=0.005
+export MOMENTUM=0.9  
+export EPOCHS=120
+
+export MODEL=resnet152
+
+# Training Hyperparameters
+export BATCH_SIZE=64  # Larger batch size for stable training
+export LEARNING_RATE=0.005 #changed not tested
+export LR_DECAY_EPOCHS="150,180,210"  
+export LR_DECAY_RATE=0.1  
+export WEIGHT_DECAY=5e-4  
+export MOMENTUM=0.9  
+export EPOCHS=240
+
+#INCASE EMERGENCY VGG19 74%
+
+export MODEL=vgg19
+
+# Training Hyperparameters
+export BATCH_SIZE=64  # Larger batch size for stable training
+export LEARNING_RATE=0.001 #Changed not tested most recent test 717
+export LR_DECAY_EPOCHS="90,120"  
+export LR_DECAY_RATE=0.1
+export WEIGHT_DECAY=0.01
+export MOMENTUM=0.9  
+export EPOCHS=150
+
+export MODEL=regnety16gf
+
+# Training Hyperparameters
+export BATCH_SIZE=64 
+export LEARNING_RATE=0.05 
+export LR_DECAY_EPOCHS="150,180,210"  
+export LR_DECAY_RATE=0.1
+export WEIGHT_DECAY=5e-4
+export MOMENTUM=0.9  
+export EPOCHS=240
+
+
