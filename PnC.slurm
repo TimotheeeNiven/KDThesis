@@ -9,17 +9,17 @@
 #SBATCH --mem=64G
 
 export TORCH_SCRIPT=train_student_PnC.py
-export MODEL=convnextsmall
+export MODEL=convnexttiny
 
 export TRAINING_TYPE=kd
 # Training Hyperparameters
-export BATCH_SIZE=512
+export BATCH_SIZE=128
 export LEARNING_RATE=0.00625  # Lowered for stability
 export WEIGHT_DECAY=1e-5
 export MOMENTUM=0.9
-export EPOCHS=100
+export EPOCHS=300
 export DATASET=cifar100
-export CUTMIX=--cutmix
+export MIXUP=--mixup
 export LR_SCHEDULER=cosine
 export OPTIMIZER=adamw  # Use 'adamw' if supported
 export RESIZE_INPUT=--resize_input  # Resizes to 256x256 input
@@ -75,13 +75,13 @@ torchrun --nproc_per_node=$NUM_GPUS --master_port=$MASTER_PORT $TORCH_SCRIPT \
     --lr_scheduler $LR_SCHEDULER \
     --kd_T 2 \
     --gamma 0 \
-    --alpha 0 \
-    --beta 1 \
+    --alpha 1 \
+    --beta 0 \
     --label_smoothing $LABEL_SMOOTHING \
     --grad_clip $GRAD_CLIP \
     $RESIZE_INPUT \
     $STRONG_AUG \
-    $CUTMIX
+    $MIXUP
 
 
 echo ""
